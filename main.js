@@ -18,7 +18,7 @@ function modelLoaded(){
     console.log('model is loaded');
 }
 function gotPoses(results){
-    if(results.length>0){
+    if(results.length > 0){
         console.log(results);
         noseX = results[0].pose.nose.x;
         noseY = results[0].pose.nose.y;
@@ -34,7 +34,7 @@ function gotPoses(results){
 function draw(){
     background('#8a8a91');
 
-    document.getElementById("square_side").innerHTML = "Width and Height of a Square will be = "+difference+"px";
+    document.getElementById("square_side").innerHTML="Width and Height of a Square will be = "+difference+"px";
     fill('pink');
     stroke('pink');
     square(noseX, noseY, difference);
